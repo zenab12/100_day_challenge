@@ -1,0 +1,81 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+html {
+  height: 100%;
+}
+body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #111;
+}
+
+main {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+main div {
+  width: 110px;
+  height: 500px;
+  border-radius: 95px;
+  background-size: contain;
+  border: 6px solid rgb(255, 243, 243);
+  cursor: pointer;
+  transition: all 0.5s linear;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-end;
+}
+
+main div p {
+  white-space: nowrap;
+  font-size: 1.6rem;
+  color: #fff;
+  text-overflow: ellipsis;
+  padding: 40px 20px;
+  opacity: 0;
+  transition: all 0.5s linear;
+}
+main div.active {
+  width: 800px;
+  border-radius: 0px;
+  margin: 0px 40px;
+  border: 6px groove #fff;
+}
+main div.active p {
+  opacity: 1;
+}
+main div:first-of-type {
+  background: #fff url("./horse-1330690_1920.jpg") no-repeat;
+  background-size: cover;
+  mix-blend-mode: color-dodge;
+}
+
+main div:nth-of-type(2) {
+  background: #fff url("./horse-1804425_1920.jpg") no-repeat;
+  background-size: cover;
+}
+
+main div:nth-of-type(3) {
+  background: #fff url("./horse-3765847_1920.jpg") no-repeat;
+  background-size: cover;
+  mix-blend-mode: difference;
+}
+
+main div:nth-of-type(4) {
+  background: #fff url("./horse-654841_1920.jpg") no-repeat;
+  background-size: cover;
+}
+main div:nth-of-type(5) {
+  background: #fff url("./stallion-422110_1920\(1\).jpg") no-repeat;
+  background-size: cover;
+  mix-blend-mode: revert;
+}
